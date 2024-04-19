@@ -1,0 +1,134 @@
+.login_container {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.login_back_icons{
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	color: #c59d5f;
+	font-size: 2rem;
+	margin-right: 42%;
+	margin-bottom: 1rem;
+	width: 20%;
+}
+
+.login_form_container {
+	width: 900px;
+	height: 500px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.left {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 10px;
+
+}
+
+.form_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	width: 80%;
+	height: 80%;
+}
+
+.form_container h1 {
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 3rem;
+	color: #c59d5f;;
+}
+
+.form_container_input{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.input {
+	outline: none;
+	border: none;
+	width: 370px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+.error_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #3bb19b;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.right h1 {
+	margin-top: 0;
+	color: white;
+	font-size: 40px;
+	align-self: center;
+}
+
+.signin_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: white;
+	border-radius: 20px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.signin_btn {
+	background-color: #c59d5f;
+	color: white;
+	margin: 10px;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 430px) {
+	
+	.login_form_container {
+		width: 100%;
+	}
+
+	.login_back_icons{
+		width: 70%;
+		font-size: 2rem;
+		margin-right: 22%;
+	}
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+.login_back_icons{
+    margin-left: 1rem;
+}
+
+.create_products_section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    justify-content: center;
+    border: 0.25rem solid var(--clr-gold);
+    width: 60%;
+    padding: 30px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.create_products_input{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: flex-start;
+}
+
+.create_products_section input{
+    height: 1.5rem;
+    width: 100%
+}
+
+.create_products_section button{
+    height: 2rem;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 1.3rem;
+}
+
+
+.button{
+    border: 2px solid var(--clr-gold);
+    height: 2rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+
+/* PostView */
+
+.postview-menu-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    width: 40%;
+
+}
+
+.postview-photo, .createproduct-photo {
+    object-fit: cover;
+    border: 0.25rem solid var(--clr-gold);
+}
+
+.icon-section{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.icons{
+    font-size: 2rem;
+    color: var(--clr-gold);
+    transition: 0.5s;
+}
+
+
+.icons:hover{
+    transform: translateY(-5px)
+}
