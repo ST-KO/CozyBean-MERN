@@ -367,7 +367,7 @@ Menu
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 	
 	.navbar h1 {
     font-size: 25px;
@@ -377,7 +377,6 @@ Menu
   }
 
   .diplay_icons-container {
-    margin-top: 5%;
-
+    margin-top: 6%;
   }
 }

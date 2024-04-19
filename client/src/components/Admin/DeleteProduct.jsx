@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
 import './styles.css';
 
 const DeleteProduct = () => {
@@ -11,7 +12,7 @@ const DeleteProduct = () => {
     const params = useParams();
     const navigate = useNavigate();
 
-    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555';
+    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
     useEffect(() => {
         axios.get(`${backendUrl}api/products/${params.id}`)
             .then(res => {
@@ -36,9 +37,13 @@ const DeleteProduct = () => {
 return (
     <div className='menu'>
             <div className='title'>
-                <h2>Are You Sure You Want To Delete This ?</h2>
+                <h3>Are You Sure <br/>You Want To Delete This ?</h3>
                 <div className='underline'></div>
             </div>
+            <Link to={`/`} className='login_back_icons'>
+                <BsArrowLeft/>
+                <h6>Back to Menu Page</h6>
+            </Link>
             {
                 data &&
                 <article className='postview-menu-item' id={data._id}>

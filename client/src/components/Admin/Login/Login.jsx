@@ -25,7 +25,7 @@ const Login = () => {
         }));
     };
 
-    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555';
+    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
     const handleSubmit = async (e) => {
         e.preventDefault();
 

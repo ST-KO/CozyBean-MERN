@@ -14,7 +14,7 @@ const PostviewProduct = () => {
     const [data, setData] = useState();
     const params = useParams();
 
-    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555';
+    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
     useEffect(() => {
         axios.get(`${backendUrl}api/products/${params.id}`)
             .then(res => {

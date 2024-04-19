@@ -14,7 +14,7 @@ const Buttons = () => {
     const foodType = params.get('type');
     const subFoodType = subFoodparams.get('subtype');
 
-    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555';
+    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
     const url = `${backendUrl}api/products`;
 
     // const fetchData = async () => {

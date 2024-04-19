@@ -28,7 +28,7 @@ const DisplayMenu = ({data}) => {
     // const finalFilterArray1 = subFoodType ? "filterSubFood" : "filterFood";
 
     // console.log(finalFilterArray1);
-    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555';
+    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
 
     const displayMenu = finalFilterArray.map(menu => (
         <article className='menu-item' key={menu._id}>

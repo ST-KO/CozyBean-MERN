@@ -86,3 +86,13 @@
 .icons:hover{
     transform: translateY(-5px)
 }
+
+@media screen and (max-width: 450px) {
+    .create_products_section {
+        width: 90%;
+    }
+
+    .postview-menu-item{
+        width: 80%;
+    }
+}
