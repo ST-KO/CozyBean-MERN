@@ -8,7 +8,6 @@ const DisplayMenu = ({data}) => {
     const [params, setParams] = useSearchParams();
     const [subFoodparams, setSubFoodParams] = useSearchParams();
 
-
     const foodType = params.get('type');
     const subFoodType = subFoodparams.get('subtype');
     const user = localStorage.getItem('token');
@@ -26,10 +25,10 @@ const DisplayMenu = ({data}) => {
     const finalFilterArray = subFoodType ? filterSubFood : filterFood;
     
     // const finalFilterArray1 = subFoodType ? "filterSubFood" : "filterFood";
-
     // console.log(finalFilterArray1);
-    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
 
+    const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
+    
     const displayMenu = finalFilterArray.map(menu => (
         <article className='menu-item' key={menu._id}>
             <img src={`${backendUrl}images/${menu?.img}`} alt="menu item" className='photo' />

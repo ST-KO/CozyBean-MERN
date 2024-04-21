@@ -201,7 +201,7 @@ export const Menu = [
     },
     {
       id: 21,
-      title: "Vegetable Spring Rool",
+      title: "Vegetable Spring Roll",
       title1: "ကော်ပြန့်လိပ်",
       main_category: "food",
       category: ["deep-fried", "food"],
