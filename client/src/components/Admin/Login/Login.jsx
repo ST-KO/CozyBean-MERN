@@ -86,6 +86,10 @@ const Login = () => {
                     <button type='submit' className='signin_btn'>
                         Sign In
                     </button>
+                    <br />
+                    <div>
+                        Demo Accout: demo / Demo1234$
+                    </div>
                 </form>
             </div>
             {/* <div className='right'>
