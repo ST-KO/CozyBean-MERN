@@ -48,63 +48,63 @@ const Login = () => {
     }
   
     return (
-    <div className='login_container'>
-        <Link to={`/`} className='login_back_icons'>
-            <BsArrowLeft/>
-            <h6>Back to Menu Page</h6>
-        </Link>
-        <div className='login_form_container'>
-            <div className='left'>
-                <form className='form_container' onSubmit={handleSubmit}>
-                    <h1>Admin Login</h1>
-                    <div className='form_container_input'>
-                        <input 
-                            type="text" 
-                            placeholder='Username'
-                            name='username'
-                            onChange={handleChange}
-                            value={data.username}
-                            className='input'
-                            autoComplete='on'
-                            required
-                        />
-                        <input 
-                            type="password" 
-                            placeholder='Password'
-                            name='password'
-                            onChange={handleChange}
-                            value={data.password}
-                            className='input'
-                            autoComplete='off'
-                            required
-                        />
-                        {
-                            error && 
-                            <div className='error_msg'>{error}</div>
-                        }
-                    </div>
-                    <button type='submit' className='signin_btn'>
-                        Sign In
-                    </button>
-                    <br />
-                    <div>
-                        Demo Accout: demo / Demo1234$
-                    </div>
-                </form>
+        <div className='login_container'>
+            <Link to={`/`} className='login_back_icons'>
+                <BsArrowLeft/>
+                <h6>Back to Menu Page</h6>
+            </Link>
+            <div className='login_form_container'>
+                <div className='left'>
+                    <form className='form_container' onSubmit={handleSubmit}>
+                        <h1>Admin Login</h1>
+                        <div className='form_container_input'>
+                            <input 
+                                type="text" 
+                                placeholder='Username'
+                                name='username'
+                                onChange={handleChange}
+                                value={data.username}
+                                className='input'
+                                autoComplete='on'
+                                required
+                            />
+                            <input 
+                                type="password" 
+                                placeholder='Password'
+                                name='password'
+                                onChange={handleChange}
+                                value={data.password}
+                                className='input'
+                                autoComplete='off'
+                                required
+                            />
+                            {
+                                error && 
+                                <div className='error_msg'>{error}</div>
+                            }
+                        </div>
+                        <button type='submit' className='signin_btn'>
+                            Sign In
+                        </button>
+                        <br />
+                        <div>
+                            Demo Accout: demo / Demo1234$
+                        </div>
+                    </form>
+                </div>
+                {/* <div className='right'>
+                <h1>New Here ?</h1>
+                    <Link to='/signup'>
+                        <button type='button' className='white_btn'>
+                            Sign Up
+                        </button>
+                    </Link>
+                
+                </div> */}
             </div>
-            {/* <div className='right'>
-            <h1>New Here ?</h1>
-                <Link to='/signup'>
-                    <button type='button' className='white_btn'>
-                        Sign Up
-                    </button>
-                </Link>
-              
-            </div> */}
         </div>
-    </div>
     
-  )
+    )
 }
 
 export default Login;

@@ -8,10 +8,14 @@ const authController = async (req, res) => {
     if (error) {
       return res.status(400).send({ message: error.details[0].message });
     }
+
+    //Check if user exists
     const user = await User.findOne({ username: req.body.username });
     if (!user) {
       return res.status(401).send({ message: "Invalid Username or Password" });
     }
+
+    //Check if password is correct
     const validPassword = await bcrypt.compare(
       req.body.password,
       user.password
@@ -19,6 +23,7 @@ const authController = async (req, res) => {
     if (!validPassword) {
       return res.status(401).send({ message: "Invalid Username or Password" });
     }
+
     const token = user.generateAuthToken();
     res.status(200).send({ data: token, message: "Logged in successfully" });
   } catch (err) {

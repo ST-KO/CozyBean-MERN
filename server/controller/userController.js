@@ -7,12 +7,16 @@ const createUser = async (req, res) => {
     if (error) {
       return res.status(400).send({ message: error.details[0].message });
     }
+
+    //Check if user already exists
     const user = await User.findOne({ username: req.body.username });
     if (user) {
       return res
         .status(409)
         .send({ message: "User with given username already exist" });
     }
+
+    //Hash Password
     const salt = await bcrypt.genSalt(Number(process.env.SALT));
     const hashPassword = await bcrypt.hash(req.body.password, salt);
 

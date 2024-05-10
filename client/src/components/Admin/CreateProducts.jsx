@@ -23,7 +23,7 @@ const CreateProducts = () => {
     const {enqueueSnackbar} = useSnackbar();
    
     const handleUpload = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
 
         const formData = new FormData();
 
