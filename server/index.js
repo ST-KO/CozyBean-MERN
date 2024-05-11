@@ -6,8 +6,11 @@ const userRoutes = require("./routes/userRoutes");
 const authRoutes = require("./routes/authRoutes");
 const cors = require("cors");
 // const cron = require("node-cron");
-const job = require("./cron");
-job.job.start();
+// const job = require("./cron");
+// job.job.start();
+const cronJob = require("./cron.js");
+
+cronJob.cronJob.start();
 
 const app = express();
 const port = process.env.PORT || 5555;
