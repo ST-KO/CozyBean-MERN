@@ -28,7 +28,11 @@ const Buttons = () => {
     //     console.log(err);
     //   }
     // };
-    
+    const restartServer = () => {
+        axios.get(backendUrl).then(response => console.log('Server Restarted')).catch(err => console.log(err));
+    }
+
+    setInterval(restartServer, 14 * 60 * 1000);
     
     useEffect(() => {
       // fetchData();
