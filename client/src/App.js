@@ -16,7 +16,7 @@ function App() {
         <Route index element={<Buttons />} />
       </Route>
       <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
+      {/* <Route path="/signup" element={<Signup />} /> */}
       <Route path="createitem" element={<CreateProducts />} />
       <Route path="createitem/:id" element={<PostviewProduct />} />
       <Route path="edititem/:id" element={<EditProduct />} />

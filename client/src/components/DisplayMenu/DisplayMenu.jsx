@@ -28,7 +28,8 @@ const DisplayMenu = ({data}) => {
     // console.log(finalFilterArray1);
 
     const backendUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:5555/';
-    
+
+
     const displayMenu = finalFilterArray.map(menu => (
         <article className='menu-item' key={menu._id}>
             <img src={`${backendUrl}images/${menu?.img}`} alt="menu item" className='photo' />
