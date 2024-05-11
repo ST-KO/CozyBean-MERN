@@ -20,15 +20,3 @@ const cronJob = cron.schedule(cronSchedule, () => {
 });
 
 module.exports = { cronJob };
-// const job = new cron.CronJob("*/14 * * * *", () => {
-//   console.log("Restarting Server");
-
-//   axios
-//     .get(backendUrl)
-//     .then((response) => console.log("Server Restarted"))
-//     .catch((err) => console.log(err));
-// });
-
-// module.exports = {
-//   job,
-// };

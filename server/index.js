@@ -5,9 +5,6 @@ const productRoutes = require("./routes/productRoutes");
 const userRoutes = require("./routes/userRoutes");
 const authRoutes = require("./routes/authRoutes");
 const cors = require("cors");
-// const cron = require("node-cron");
-// const job = require("./cron");
-// job.job.start();
 const cronJob = require("./cron.js");
 
 cronJob.cronJob.start();
@@ -25,10 +22,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
-
-// cron.schedule("*/14 * * * *", () => {
-//   console.log("server restarting");
-// });
 
 app.get("/", async (req, res) => {
   try {
