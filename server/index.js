@@ -7,7 +7,7 @@ const authRoutes = require("./routes/authRoutes");
 const cors = require("cors");
 const cronJob = require("./cron.js");
 
-// cronJob.cronJob.start();
+cronJob.cronJob.start();
 
 const app = express();
 const port = process.env.PORT || 5555;
